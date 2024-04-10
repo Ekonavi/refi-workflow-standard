@@ -1,0 +1,68 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "rws": "https://ekonavi.com/rws/0.1/",
+    "Workflow": "rws:Workflow",
+    "Step": "rws:Step",
+    "Action": "rws:Action",
+    "Result": "rws:Result",
+    "Reward": "rws:Reward",
+    "Reqs": "rws:Reqs",
+    "Administrator": "rws:Administrator",
+    "Creator": "rws:Creator",
+    "Actor": "rws:Actor",
+    "EI": "rws:ei",
+    "name": "foaf:name",
+    "email": "foaf:mbox",
+    "address": "rws:address",
+    "hasStep": {
+      "@id": "Workflow:hasStep",
+      "@type": "@id"
+    },
+    "hasAction": {
+      "@id": "Step:hasAction",
+      "@type": "@id"
+    },
+    "hasView": {
+      "@id": "Step:hasView",
+      "@type": "@id"
+    },
+    "hasResult": {
+      "@id": "Step:hasResult",
+      "@type": "@id"
+    },
+    "hasReward": {
+      "@id": "Step:hasReward",
+      "@type": "@id"
+    }
+  },
+  "@type": "Workflow",
+  "hasStep": {
+    "@type": "Step",
+    "title": "schema:Text",
+    "expires": "schema:DateTime",
+    "hasAction": {
+      "@type": "Action",
+      "description": "schema:Text"
+    },
+    "hasView": {
+      "@type": "View",
+      "html": "schema:Text"
+    },
+    "hasResult": {
+      "@type": "Result",
+      "description": "schema:Text"
+    },
+    "hasReward": {
+      "@type": "Reward",
+      "description": "schema:Text"
+    }
+  },
+  "Creator": {
+    "@type": "foaf:Person",
+    "name": "schema:Text",
+    "email": "schema:Text",
+    "address": "rws:address"
+  }
+}
