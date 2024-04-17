@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "rws": "https://raw.githubusercontent.com/Ekonavi/refi-workflow-standard/0.1/",
+    "Step": "rws:Step.json"
+  },
+  "@id": "rws:Workflow",
+  "@type": "schema:CreativeWork",
+  "name": "schema:name",
+  "description": "schema:description",
+  "hasStep": {
+    "@type": "Step",
+    "@container": "@list"
+  },
+  "creator": {
+    "@id": "rws:creator",
+    "@type": "foaf:Person"
+  }
+}

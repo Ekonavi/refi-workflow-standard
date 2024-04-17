@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "rws": "https://raw.githubusercontent.com/Ekonavi/refi-workflow-standard/0.1/",
+    "BaseEntity": "rws:BaseEntity.json"
+  },
+  "@id": "rws:Result",
+  "@type": "BaseEntity",
+  "outcome": {
+    "@id": "schema:result",
+    "@type": "schema:Text"
+  }
+}

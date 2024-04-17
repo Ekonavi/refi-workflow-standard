@@ -2,67 +2,19 @@
   "@context": {
     "schema": "http://schema.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
-    "rws": "https://ekonavi.com/rws/0.1/",
-    "Workflow": "rws:Workflow",
-    "Step": "rws:Step",
-    "Action": "rws:Action",
-    "Result": "rws:Result",
-    "Reward": "rws:Reward",
-    "Reqs": "rws:Reqs",
-    "Administrator": "rws:Administrator",
-    "Creator": "rws:Creator",
-    "Actor": "rws:Actor",
-    "EI": "rws:ei",
+    "rws": "https://raw.githubusercontent.com/Ekonavi/refi-workflow-standard/0.1/",
+    "Workflow": "rws:Workflow.json",
+    "Step": "rws:Step.json",
+    "Action": "rws:Action.json",
+    "Result": "rws:Result.json",
+    "Reward": "rws:Reward.json",
+    "Reqs": "rws:Reqs.json",
+    "Administrator": "rws:Administrator.json",
+    "Creator": "rws:Creator.json",
+    "Actor": "rws:Actor.json",
+    "EI": "rws:EI.json",
     "name": "foaf:name",
     "email": "foaf:mbox",
-    "address": "rws:address",
-    "hasStep": {
-      "@id": "Workflow:hasStep",
-      "@type": "@id"
-    },
-    "hasAction": {
-      "@id": "Step:hasAction",
-      "@type": "@id"
-    },
-    "hasView": {
-      "@id": "Step:hasView",
-      "@type": "@id"
-    },
-    "hasResult": {
-      "@id": "Step:hasResult",
-      "@type": "@id"
-    },
-    "hasReward": {
-      "@id": "Step:hasReward",
-      "@type": "@id"
-    }
-  },
-  "@type": "Workflow",
-  "hasStep": {
-    "@type": "Step",
-    "title": "schema:Text",
-    "expires": "schema:DateTime",
-    "hasAction": {
-      "@type": "Action",
-      "description": "schema:Text"
-    },
-    "hasView": {
-      "@type": "View",
-      "html": "schema:Text"
-    },
-    "hasResult": {
-      "@type": "Result",
-      "description": "schema:Text"
-    },
-    "hasReward": {
-      "@type": "Reward",
-      "description": "schema:Text"
-    }
-  },
-  "Creator": {
-    "@type": "foaf:Person",
-    "name": "schema:Text",
-    "email": "schema:Text",
-    "address": "rws:address"
+    "_notes": "While using githubusercontent .json is required to resolve types. Probably only need Worflow Type as entry point for the rest of types?"
   }
 }

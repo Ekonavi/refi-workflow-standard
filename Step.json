@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "rws": "https://raw.githubusercontent.com/Ekonavi/refi-workflow-standard/0.1/",
+    "Action": "rws:Action.json",
+    "View": "rws:View.json",
+    "Result": "rws:Result.json",
+    "Reward": "rws:Reward.json",
+    "BaseEntity": "rws:BaseEntity.json"
+  },
+  "@id": "rws:Step",
+  "@type": "BaseEntity",
+  "hasAction": {
+    "@type": "Action",
+    "@container": "@list"
+  },
+  "hasView": {
+    "@type": "View"
+  },
+  "hasResult": {
+    "@type": "Result",
+    "@container": "@list"
+  },
+  "hasReward": {
+    "@type": "Reward",
+    "@container": "@list"
+  }
+}

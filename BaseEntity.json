@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "schema": "http://schema.org/"
+  },
+  "@id": "rws:BaseEntity",
+  "@type": "schema:Thing",
+  "name": {
+    "@id": "schema:name",
+    "@type": "schema:Text"
+  },
+  "description": {
+    "@id": "schema:description",
+    "@type": "schema:Text"
+  }
+}
